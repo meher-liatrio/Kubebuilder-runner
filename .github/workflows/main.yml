@@ -1,0 +1,13 @@
+name: Hello Kubebuilder
+
+on: 
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+    - name: ship it
+      run: echo "hello kubebuilder"
